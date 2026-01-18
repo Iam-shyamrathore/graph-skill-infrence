@@ -1,0 +1,58 @@
+\section{Detailed System Architecture (Booklet Edition)}
+\label{sec:architecture_booklet}
+
+The Skill Inference Information Network (SIIN) is formalized as a three-tier heterogeneous engine designed for the high-fidelity extraction of latent expertise nodes from sparse transactional activity.
+
+\subsection{HIN Ontology and Semantic Schema}
+We define the system graph $G$ over a schema-restricted HIN $T_G = (V, E)$. The ontology defines a strict hierarchy of evidence:
+
+\begin{itemize}
+    \item \textbf{Developer ($D$)}: The root entity $\mathcal{E}_d$, associated with an activity visibility index $Vis(D) = \sum \log(1+n_{commits})$.
+    \item \textbf{Repository ($P$)}: A knowledge container characterized by metadata vectors $\vec{M}_p = (stars, languages, topics)$.
+    \item \textbf{Commit ($C$)}: A temporal transaction node. Each commit node $c \in C$ possesses a richness attribute $R_c$ derived from pathset diversity.
+    \item \textbf{File ($F$)}: A semantic leaf node. Edges $e: C \to F$ are weighted by the TF-IDF vector of code patches.
+\end{itemize}
+
+\subsection{Semantic Weighting: TF-IDF Code Filtering}
+To distinguish between trivial boilerplate and expertise-revealing logic, we apply TF-IDF weighting to code patches. For a term $t$ in a patch $d$:
+\begin{equation}
+W_{t,d} = \text{TF}(t, d) \cdot \ln \left( \frac{N}{1 + \text{DF}(t)} \right)
+\end{equation}
+where $N$ is the total count of commits analyzed. This ensures that a commit involving \texttt{pthreads.h} is weighted higher than one involving \texttt{index.html}.
+
+\subsection{Agentic Search Policy (DeepPath)}
+The explorer uses a high-intensity \textbf{PUCT-guided MCTS} to navigate the HIN topology. The state $s$ represents the current reasoning context.
+
+\subsubsection{PUCT Selection Equation}
+The selection of action $a$ is governed by:
+\begin{equation}
+a_t = \arg\max_{a} \left[ Q(s, a) + C_{puct} \cdot P(s, a) \cdot \frac{\sqrt{\sum N_b}}{1 + N_a} \right]
+\end{equation}
+The heuristic prior $P(s, a)$ is determined by the repository star-count and language relevance flags.
+
+\subsubsection{Multi-faceted Reward Function}
+The agent avoids local optima via a weighted composite reward $R_{total}$:
+\begin{equation}
+R = \alpha \cdot \text{Acc} + \beta \cdot \text{Eff} + \gamma \cdot \text{Div}
+\end{equation}
+where $\text{Eff} = 1/L^2$ (Length penalty) and $\text{Div}$ is the session entropy gain.
+
+\subsection{Conflict-Aware Evidence Fusion}
+Final inference relies on the \textbf{Josang-Yager Hybrid Engine}. Unlike standard Bayesian models, this framework explicitly distinguishes between "I don't know" and "I know it is not true."
+
+\subsubsection{Path Discounting (Trust Propagation)}
+Evidence strength across a path $p$ decays recursively:
+\begin{equation}
+b_{p} = b_1 \cdot b_2 \cdot \dots \cdot b_n
+\end{equation}
+\begin{equation}
+u_{p} = (1 - b_1) + b_1 \cdot u_2
+\end{equation}
+This ensures that uncertainty $u$ monotonically increases with path length.
+
+\subsubsection{Yager Conflict Reallocation}
+Conflicting evidence between paths $p_1$ and $p_2$ resulting in mass $K$ is reallocated to the uncertainty mass $u$, preventing artificial belief spikes:
+\begin{equation}
+u_{fused} = (u_1 \cdot u_2) + K
+\end{equation}
+This "Honest Math" approach ensures the profile represents the system's true epistemic state.

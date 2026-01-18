@@ -1,0 +1,34 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Graph-Theoretic Skill Inference for Developer Profiling: \\ A Theoretical Framework}
+\author{Research Team}
+\date{January 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a novel framework for developer profiling using Graph-Theoretic Skill Inference. By modeling developer activity as a Heterogeneous Information Network (HIN), we employ Monte Carlo Tree Search (MCTS) with LLM-based policies for optimal graph exploration. We further integrate Dempster-Shafer Theory (DST) to provide rigorous confidence bounds on inferred skills, addressing epistemic uncertainty in skill discovery.
+\end{abstract}
+
+\include{04_theoretical_framework}
+\include{01_graph_construction}
+\include{03_confidence_math}
+\include{04_theoretical_framework}
+\include{architecture_detailed}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

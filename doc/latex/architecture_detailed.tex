@@ -1,0 +1,30 @@
+\section{System Architecture: SIIN v2.0}
+\label{sec:system_architecture}
+
+The Skill Inference Information Network (SIIN) is a decentralized multi-agent system designed to model technical expertise as a structural property of a Heterogeneous Information Network (HIN).
+
+\subsection{Architectural Pipeline}
+The architecture is divided into three distinct functional layers:
+
+\begin{enumerate}
+    \item \textbf{Ingestion Layer}: Interacts with the GitHub API to construct a schema-restricted HIN. It employs \textbf{TF-IDF Semantic Filtering} to weight edges based on code change significance.
+    \item \textbf{Exploration Layer}: A \textbf{DeepPath-MCTS Agent} that navigates the HIN. It utilizes a multi-faceted reward function $R = \alpha R_{acc} + \beta R_{eff} + \gamma R_{div}$ to balance search breadth and reasoning depth.
+    \item \textbf{Inference Layer}: The \textbf{Josang-Yager Engine} which performs evidence fusion. It maps graph paths to Subjective Opinions and applies the \textbf{Consensus Operator} with Yager-based conflict reallocation.
+\end{enumerate}
+
+\subsection{HIN Schema and Data Modeling}
+We define the graph $G = (V, E)$ over the node set $V \in \{D, P, C, F, S, I\}$. Relationships are modeled as directed edges with associated weights $\mathcal{W}$ derived from:
+\begin{itemize}
+    \item \textbf{Visibility Index}: $Vis(D) = \sum_{e \in E_{out}(D)} w(e)$
+    \item \textbf{Semantic Weight}: $W(c, f) = \text{TF-IDF}(\text{diff}_{c,f})$
+\end{itemize}
+
+\subsection{Agentic Search Policy}
+The explorer follows an \textbf{MCTS-CoT} policy. During the simulation phase, the Large Language Model (LLM) acts as a reasoning oracle, providing a causal explanation $E$ for each skill node discovery. This transition from blind lookup to causal reasoning is the primary innovation of the DeepPath upgrade.
+
+\subsection{Evidence Fusion Math}
+Skill confidence is discretized into the interval $[Bel, Pl]$ using Subjective Logic. For any path $p = (e_1, e_2, \dots, e_n)$, the reliability propagates via:
+\begin{equation}
+\omega_{total} = \omega_{e_1} \otimes \omega_{e_2} \otimes \dots \otimes \omega_{e_n}
+\end{equation}
+Conflicts between independent paths are managed via Yager-reallocation, ensuring that $u_{fused} \propto Conflict(m_1, m_2)$.

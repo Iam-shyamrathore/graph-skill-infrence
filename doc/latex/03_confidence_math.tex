@@ -1,0 +1,39 @@
+\section{Rigorous Confidence Calculation}
+\label{sec:confidence_math}
+
+\subsection{Theoretical Foundation: Subjective Logic}
+Standard Dempster-Shafer Theory \cite{shafer1976mathematical} assumes independent evidence. In HINs, we adopt \textbf{Subjective Logic} \cite{josang2016subjective} to represent evidence as an \textbf{Opinion} $\omega = (b, d, u, a)$, where $b$, $d$, and $u$ represent belief, disbelief, and uncertainty respectively, and $a$ is the base rate.
+
+\subsection{Mathematical Improvements}
+
+\subsubsection{Discounting Operator (Trust Decay)}
+To model the decay of evidence strength through long graph paths, we use the \textbf{Discounting Operator} $\otimes$:
+\begin{equation}
+\omega_{D \to S} = \omega_{e_1} \otimes \omega_{e_2} \otimes \dots \otimes \omega_{s}
+\end{equation}
+
+\subsubsection{Consensus and Conflict Reallocation}
+Standard Dempster normalization can lead to "Certainty Inflation" in conflicting graphs. We implement \textbf{Yager's Rule} re-defined for Subjective Logic. Instead of normalizing via $1-K$, the conflicting mass $K$ is re-allocated to \textbf{Uncertainty ($u$)}:
+\begin{equation}
+u_{fused} = \frac{u_1 u_2 + K}{1} = u_1 u_2 + K
+\end{equation}
+This ensure that disagreement between repositories (e.g., Repo A says "Expert", Repo B says "Novice") results in higher uncertainty rather than an arbitrary choice between the two.
+
+\subsection{Path Dependency Modeling}
+Using \textbf{Dirichlet Distributions}, we map opinions to probability density functions, allowing the system to handle the sparsity of interactions inherent in private or small-scale developer repositories.
+\begin{itemize}
+    \item \textbf{Belief (Bel):} Lower bound of confidence.
+    \begin{equation}
+    Bel(S) = \sum_{X \subseteq S} m(X) = m(\{S\})
+    \end{equation}
+    \item \textbf{Plausibility (Pl):} Upper bound of confidence.
+    \begin{equation}
+    Pl(S) = \sum_{X \cap S \neq \emptyset} m(X) = m(\{S\}) + m(\Theta)
+    \end{equation}
+\end{itemize}
+
+\subsection{Application to Skill Inference}
+The Confidence Score $C(s|d)$ is the \textbf{Belief} function result:
+\begin{equation}
+C(s|d) = Bel_{final}(\{Skill\})
+\end{equation}

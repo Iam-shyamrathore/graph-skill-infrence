@@ -1,0 +1,47 @@
+\section{Advanced Graph Construction for Developer Profiling}
+\label{sec:graph_construction}
+
+\subsection{Theoretical Foundation: Heterogeneous Information Networks (HIN)}
+We formally define the developer profile as a Heterogeneous Information Network (HIN), denoted as $G = (V, E)$, with an entity type mapping $\phi: V \rightarrow \mathcal{A}$ and a relation type mapping $\psi: E \rightarrow \mathcal{R}$, where $|\mathcal{A}| > 1$ or $|\mathcal{R}| > 1$.
+
+\subsubsection{Schema Definition}
+The network schema $T_G = (\mathcal{A}, \mathcal{R})$ defines the permissible structure.
+\textbf{Node Types ($\mathcal{A}$):}
+\begin{itemize}
+    \item $D$: Developer
+    \item $P$: Project (Repository)
+    \item $C$: Commit (Atomic Change)
+    \item $F$: File (Source Code)
+    \item $S$: Skill (Latent Attribute)
+    \item $I$: Issue (Task/Discussion)
+\end{itemize}
+
+\textbf{Meta-Paths:}
+Meta-paths $\mathcal{P}$ define composite relations that capture semantic meaning \cite{sun2011pathsim}.
+\begin{itemize}
+    \item \textbf{Expertise Path ($D \xrightarrow{author} C \xrightarrow{modify} F \xrightarrow{contain} S$):} Connects a developer to a skill through code modifications.
+    \item \textbf{Collaboration Path ($D_1 \xrightarrow{comment} I \xleftarrow{open} D_2$):} Connects developers via discussion.
+    \item \textbf{Project Focus ($D \xrightarrow{commit} P \xrightarrow{use} L_{ang}$):} Connects developer to languages used.
+\end{itemize}
+
+\subsection{Advanced Weighting Mechanisms}
+
+\subsubsection{TF-IDF for Code Semantics}
+To quantify the "richness" of a commit $c$ regarding a file $f$, we adapt \textbf{TF-IDF}:
+\begin{equation}
+W_{c,f} = tf(t, c) \cdot idf(t, \mathcal{C})
+\end{equation}
+Where $t$ represents semantic tokens (imports, function calls) in the diff, and $\mathcal{C}$ is the corpus of all commits in the graph. This down-weights boilerplate changes and up-weights semantic changes.
+
+\subsubsection{Proficiency Weight Modeling}
+We define the edge weight $W(d, s)$ (Developer $\to$ Skill) as an aggregated \textbf{Belief Score} derived from meta-path instances. Instead of a simple sum, we employ a PathSim-normalized evidence fusion strategy.
+
+For each path $p$ matching meta-path $\mathcal{P}_{d \to s}$, we calculate its \textbf{Relative Strength}:
+\begin{equation}
+m_p(\{s\}) = \frac{2 \cdot \text{Weight}(p)}{\text{Visibility}(d) + \text{Popularity}(s)}
+\end{equation}
+Where $\text{Weight}(p)$ is the product of TF-IDF and LLM confidence along the path. The final proficiency score is the \textbf{Belief} resulting from the fusion of all paths using \textbf{Dempster's Rule of Combination}:
+\begin{equation}
+S(d, s) = \bigoplus_{p \in \mathcal{P}_{d \to s}} m_p
+\end{equation}
+This normalization ensures that generic skills are penalized by their high popularity, while the DST fusion prevents score inflation from redundant evidence.
