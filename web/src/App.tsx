@@ -35,12 +35,17 @@ function App() {
   const [selectedDoc, setSelectedDoc] = useState<number | null>(null);
   const fgRef = useRef<any>(null);
 
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const urlToken = params.get('token');
+    const urlUser = params.get('user');
+    
     if (urlToken) {
         localStorage.setItem('gh_token', urlToken);
         setToken(urlToken);
+        if (urlUser) localStorage.setItem('gh_user', urlUser);
         setCurrentView('dashboard');
         window.history.replaceState({}, document.title, "/");
     }
@@ -49,22 +54,32 @@ function App() {
   const fetchData = async (user: string) => {
     setLoading(true);
     try {
-      const [profileRes, graphRes] = await Promise.all([
-        axios.get(`${API_URL}/profile/${user}`),
-        axios.get(`${API_URL}/graph/${user}`)
-      ]);
+      const profileRes = await axios.get(`${API_URL}/profile/${user}`);
+      
+      // Handle background processing
+      if (profileRes.data.status === 'accepted' || profileRes.data.status === 'processing') {
+          setStatusMessage(profileRes.data.message);
+          // Retry after 5 seconds
+          setTimeout(() => fetchData(user), 5000);
+          return;
+      }
+
+      const graphRes = await axios.get(`${API_URL}/graph/${user}`);
       setProfile(profileRes.data);
       setGraphData(graphRes.data);
+      setStatusMessage(null);
     } catch (e) {
       console.error("Failed to fetch data:", e);
+      setStatusMessage("Error connecting to Inference Engine.");
     } finally {
-      setLoading(false);
+      if (!statusMessage) setLoading(false);
     }
   };
 
   useEffect(() => {
     if (token && currentView === 'dashboard') {
-        fetchData('Kaos599'); // Default demo data
+        const savedUser = localStorage.getItem('gh_user') || 'Kaos599';
+        fetchData(savedUser);
     }
   }, [token, currentView]);
 
@@ -396,9 +411,11 @@ function App() {
 
                 <div className="flex-1 overflow-y-auto px-8 pb-12 custom-scrollbar">
                     {loading ? (
-                        <div className="h-full flex flex-col items-center justify-center py-20 opacity-20 border border-dashed border-white/5 rounded-3xl">
-                            <Cpu className="w-10 h-10 animate-spin mb-6" />
-                            <span className="text-[9px] font-bold uppercase tracking-[0.4em]">Decoding Manifold...</span>
+                        <div className="h-full flex flex-col items-center justify-center py-20 opacity-30 border border-dashed border-white/10 rounded-3xl bg-white/[0.01]">
+                            <Cpu className="w-10 h-10 animate-spin mb-6 text-primary" />
+                            <span className="text-[9px] font-bold uppercase tracking-[0.4em] text-center px-8 leading-loose italic">
+                                {statusMessage || "Decoding Manifold..."}
+                            </span>
                         </div>
                     ) : (
                         <div className="space-y-3">

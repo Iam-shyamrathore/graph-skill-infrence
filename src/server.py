@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Request, Response
+from fastapi import FastAPI, HTTPException, Request, Response, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 import json
@@ -7,8 +7,12 @@ import pickle
 import networkx as nx
 import requests
 from .config import Config
+from .main import run_pipeline
 
 app = FastAPI()
+
+# Track in-progress profiling tasks to avoid duplicates
+profiling_tasks = set()
 
 # GITHUB OAUTH CONFIG
 CLIENT_ID = os.getenv("GITHUB_CLIENT_ID", "")
@@ -48,21 +52,43 @@ def auth_callback(code: str):
     if "access_token" not in data:
         raise HTTPException(status_code=400, detail="OAuth failed")
     
-    # In a real app, we'd create a JWT. For the showcase, we redirect with token.
-    # WARNING: High-security risk! Only for showcase demo.
     token = data["access_token"]
-    return RedirectResponse(f"{FRONTEND_URL}/?token={token}")
+    
+    # Fetch user info to get the username
+    user_res = requests.get(
+        "https://api.github.com/user",
+        headers={"Authorization": f"token {token}"}
+    ).json()
+    username = user_res.get("login", "unknown")
+
+    return RedirectResponse(f"{FRONTEND_URL}/?token={token}&user={username}")
 
 # --- DATA ENDPOINTS ---
 
 @app.get("/profile/{username}")
-def get_profile(username: str):
+async def get_profile(username: str, background_tasks: BackgroundTasks):
     path = os.path.join("output", f"{username}_profile.json")
-    if not os.path.exists(path):
-        # Trigger dynamic build here if needed
-        raise HTTPException(status_code=404, detail="Profile not found")
-    with open(path, "r") as f:
-        return json.load(f)
+    
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            return json.load(f)
+            
+    # If not found, check if already profiling
+    if username in profiling_tasks:
+        return {"status": "processing", "message": "Inference engine is active. Manifold decoding in progress."}
+    
+    # Start background profiling
+    profiling_tasks.add(username)
+    background_tasks.add_task(trigger_profiling, username)
+    
+    return {"status": "accepted", "message": "Inference requested. Initializing MCTS exploration."}
+
+def trigger_profiling(username: str):
+    try:
+        run_pipeline(username, iterations=15) # Faster for dynamic requests
+    finally:
+        if username in profiling_tasks:
+            profiling_tasks.remove(username)
 
 @app.get("/graph/{username}")
 def get_graph(username: str):

@@ -23,35 +23,32 @@ def save_graph(graph, username):
     # nx.write_gpickle(graph, f"output/{username}_graph.gpickle")
     print(f"Graph saved to output/{username}_graph.gpickle")
 
-def main():
-    parser = argparse.ArgumentParser(description="Graph-Theoretic Skill Inference System")
-    parser.add_argument("--user", required=True, help="GitHub username to profile")
-    parser.add_argument("--iterations", type=int, default=20, help="MCTS iterations")
-    args = parser.parse_args()
-
+def run_pipeline(username: str, iterations: int = 20):
+    """
+    Main entry point for the skill inference pipeline.
+    Constructs the graph, runs MCTS exploration, and calculates confidence metrics.
+    """
     # 1. Verification
     try:
         Config.validate()
     except ValueError as e:
         print(f"Configuration Error: {e}")
-        return
+        return None
 
-    print(f"=== Starting Profiling for User: {args.user} ===")
+    print(f"=== Starting Dynamic Profiling for User: {username} ===")
     
     # 2. Graph Construction
     print("\n[Phase 1] Building Heterogeneous Information Network...")
-    builder = HINBuilder(args.user)
+    builder = HINBuilder(username)
     graph = builder.build_raw_topology()
     
     # 3. Agentic Exploration
-    print(f"\n[Phase 2] Agentic Exploration (MCTS) - Budget: {args.iterations} iters...")
-    agent = MCTSAgent(graph, builder.tfidf) # Pass TFIDF if needed, or initialized agent
-    # Agent needs LLMClient, we instantiate it here
+    print(f"\n[Phase 2] Agentic Exploration (MCTS) - Budget: {iterations} iters...")
     from src.llm_client import LLMClient
     llm = LLMClient()
     agent = MCTSAgent(graph, llm)
     
-    agent.run_exploration(iterations=args.iterations)
+    agent.run_exploration(iterations=iterations)
     
     # 4. Confidence Calculation
     print("\n[Phase 3] Calculates Belief Mass Functions (Dempster-Shafer)...")
@@ -59,10 +56,10 @@ def main():
     
     # Identify all Skill nodes found
     all_skills = [n for n, d in graph.nodes(data=True) if d.get('type') == 'skill']
-    developer_node = f"dev:{args.user}"
+    developer_node = f"dev:{username}"
     
     final_profile = {
-        "developer": args.user,
+        "developer": username,
         "skills": []
     }
     
@@ -82,8 +79,17 @@ def main():
     
     # 5. Output
     print(f"\n[Result] Identified {len(final_profile['skills'])} skills.")
-    save_profile(final_profile, args.user)
-    save_graph(graph, args.user)
+    save_profile(final_profile, username)
+    save_graph(graph, username)
+    return final_profile
+
+def main():
+    parser = argparse.ArgumentParser(description="Graph-Theoretic Skill Inference System")
+    parser.add_argument("--user", required=True, help="GitHub username to profile")
+    parser.add_argument("--iterations", type=int, default=20, help="MCTS iterations")
+    args = parser.parse_args()
+    
+    run_pipeline(args.user, args.iterations)
 
 if __name__ == "__main__":
     main()
