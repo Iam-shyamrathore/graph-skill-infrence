@@ -345,8 +345,8 @@ function App() {
             className="w-full h-full bg-black flex overflow-hidden"
           >
             {/* Left Control Panel */}
-            <div className="w-[420px] h-full flex flex-col bg-black/40 backdrop-blur-3xl border-r border-white/5 z-50">
-                <header className="p-8 border-b border-white/5 flex justify-between items-center bg-black/20">
+            <div className="w-[360px] min-w-[320px] h-full flex flex-col bg-black/40 backdrop-blur-3xl border-r border-white/5 z-50">
+                <header className="px-6 py-5 border-b border-white/5 flex justify-between items-center bg-black/20">
                     <div className="flex items-center gap-3">
                         <div className="w-7 h-7 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
                             <Brain className="w-4 h-4 text-primary" />
@@ -356,16 +356,16 @@ function App() {
                     <button onClick={handleLogout} className="text-[9px] font-black uppercase tracking-[0.3em] text-white/20 hover:text-red-500 transition-colors">Logout</button>
                 </header>
 
-                <div className="p-8 pb-0 flex-none">
+                <div className="p-6 pb-0 flex-none">
                     <div className="mb-10">
                         <div className="flex items-center gap-6 mb-4">
-                             <div className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-primary to-blue-400 p-0.5 shadow-[0_0_40px_rgba(59,130,246,0.2)]">
+                             <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-primary to-blue-400 p-0.5 shadow-[0_0_40px_rgba(59,130,246,0.2)]">
                                 <div className="w-full h-full rounded-[22px] bg-black flex items-center justify-center font-bold text-lg text-primary">
                                     {profile?.developer?.charAt(0) || 'Ø'}
                                 </div>
                              </div>
                              <div>
-                                <h2 className="text-3xl font-bold tracking-tight mb-1">{profile?.developer || 'Initializing...'}</h2>
+                                <h2 className="text-2xl font-bold tracking-tight mb-1">{profile?.developer || 'Initializing...'}</h2>
                                 <div className="flex items-center gap-2 px-0.5">
                                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                                     <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-white/30">Inference Engine Live</span>
@@ -380,7 +380,7 @@ function App() {
                             placeholder="Search GitHub Identifier" 
                             value={searchUser}
                             onChange={(e) => setSearchUser(e.target.value)}
-                            className="w-full bg-white/[0.06] border border-white/20 rounded-2xl px-12 py-5 text-sm font-semibold focus:border-primary/60 focus:bg-white/[0.1] outline-none transition-all placeholder:text-white/40 text-white shadow-inner"
+                            className="w-full bg-white/[0.06] border border-white/20 rounded-2xl px-12 py-4 text-sm font-semibold focus:border-primary/60 focus:bg-white/[0.1] outline-none transition-all placeholder:text-white/40 text-white shadow-inner"
                         />
                         <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-white/60 group-focus-within:text-primary transition-colors" />
                     </form>
@@ -409,7 +409,7 @@ function App() {
                     </div>
                 </div>
 
-                <div className="flex-1 overflow-y-auto px-8 pb-12 custom-scrollbar">
+                <div className="flex-1 overflow-y-auto px-6 pb-8 custom-scrollbar">
                     {loading ? (
                         <div className="h-full flex flex-col items-center justify-center py-20 opacity-30 border border-dashed border-white/10 rounded-3xl bg-white/[0.01]">
                             <Cpu className="w-10 h-10 animate-spin mb-6 text-primary" />
@@ -425,19 +425,19 @@ function App() {
                                     initial={{ opacity: 0, scale: 0.98 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: i * 0.04 }}
-                                    className="p-8 rounded-[32px] border border-white/[0.03] bg-white/[0.01] hover:bg-white/[0.02] hover:border-white/[0.08] transition-all group"
+                                    className="p-6 rounded-[32px] border border-white/[0.03] bg-white/[0.01] hover:bg-white/[0.02] hover:border-white/[0.08] transition-all group"
                                 >
-                                    <div className="flex justify-between items-end mb-6">
+                                    <div className="flex justify-between items-end mb-4">
                                         <div>
                                             <span className="text-[8px] font-bold uppercase tracking-widest text-white/20 mb-1 block">Inference Target</span>
-                                            <h4 className="text-base font-bold tracking-wide group-hover:text-primary transition-colors">{skill.name}</h4>
+                                            <h4 className="text-sm font-bold tracking-wide group-hover:text-primary transition-colors">{skill.name}</h4>
                                         </div>
                                         <div className="text-right">
                                             <span className="text-2xl font-bold tracking-tighter italic text-gradient">{(skill.metrics.belief * 100).toFixed(1)}%</span>
                                             <span className="block text-[8px] font-bold uppercase tracking-widest opacity-20">Facticity</span>
                                         </div>
                                     </div>
-                                    <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden mb-6">
+                                    <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden mb-4">
                                         <motion.div 
                                             initial={{ width: 0 }}
                                             animate={{ width: `${Math.min(100, skill.metrics.belief * 100)}%` }}
@@ -472,15 +472,15 @@ function App() {
                         }
                     }}
                     nodeVal={(node: any) => {
-                        if (node.group === 'dev') return 60;
-                        if (node.group === 'repo') return 25;
-                        if (node.group === 'skill') return 35;
-                        return 12;
+                        if (node.group === 'dev') return 45;
+                        if (node.group === 'repo') return 18;
+                        if (node.group === 'skill') return 25;
+                        return 8;
                     }}
                     d3AlphaDecay={0.02}
                     d3VelocityDecay={0.3}
                     cooldownTicks={100}
-                    onEngineStop={() => fgRef.current.zoomToFit(400)}
+                    onEngineStop={() => fgRef.current.zoomToFit(400, 150)}
                     linkOpacity={0.3}
                     linkWidth={2}
                     linkColor={() => '#ffffff'}
@@ -497,7 +497,7 @@ function App() {
                 </div>
 
                 {/* Legend Overlay */}
-                <div className="absolute bottom-12 right-12 flex gap-8 items-center bg-white/[0.04] border border-white/10 rounded-full px-8 py-4 backdrop-blur-3xl shadow-2xl">
+                <div className="absolute bottom-10 right-10 flex gap-6 items-center bg-white/[0.04] border border-white/10 rounded-full px-6 py-3 backdrop-blur-3xl shadow-2xl">
                     <div className="flex items-center gap-3">
                         <div className="w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.4)]" />
                         <span className="text-[10px] font-bold tracking-widest uppercase text-white/50">Dev</span>
