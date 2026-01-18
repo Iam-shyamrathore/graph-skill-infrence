@@ -1,0 +1,19 @@
+# Secrets
+.env
+*.pkl
+output/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+
+# Node / JS
+node_modules/
+dist/
+.vercel
+
+# Project specific
+server.log
+*.gpickle
