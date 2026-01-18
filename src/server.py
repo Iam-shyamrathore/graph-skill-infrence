@@ -85,7 +85,14 @@ async def get_profile(username: str, background_tasks: BackgroundTasks):
 
 def trigger_profiling(username: str):
     try:
-        run_pipeline(username, iterations=15) # Faster for dynamic requests
+        run_pipeline(username, iterations=15)
+    except Exception as e:
+        print(f"--- ERROR: Profiling failed for {username} ---")
+        print(f"Exception Type: {type(e).__name__}")
+        print(f"Details: {str(e)}")
+        # If it's a 401, it's almost certainly a missing/invalid GITHUB_TOKEN in Railway
+        if "401" in str(e) or "BadCredentials" in type(e).__name__:
+            print("CRITICAL: GITHUB_TOKEN is either missing or invalid in your Railway Environment Variables.")
     finally:
         if username in profiling_tasks:
             profiling_tasks.remove(username)
