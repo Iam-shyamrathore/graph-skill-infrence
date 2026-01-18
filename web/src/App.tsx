@@ -465,24 +465,24 @@ function App() {
                     nodeColor={(node: any) => {
                         switch(node.group) {
                             case 'dev': return '#ffffff';    // White
-                            case 'repo': return '#333333';   // Dark Gray
+                            case 'repo': return '#777777';   // Silver/Bright Gray
                             case 'skill': return '#3b82f6';  // Electric Blue
                             case 'commit': return '#10b981'; // Emerald Green (Evidence)
                             default: return '#666666';
                         }
                     }}
                     nodeVal={(node: any) => {
-                        if (node.group === 'dev') return 30;
-                        if (node.group === 'repo') return 12;
-                        if (node.group === 'skill') return 18;
-                        return 6;
+                        if (node.group === 'dev') return 60;
+                        if (node.group === 'repo') return 25;
+                        if (node.group === 'skill') return 35;
+                        return 12;
                     }}
                     d3AlphaDecay={0.02}
                     d3VelocityDecay={0.3}
                     cooldownTicks={100}
                     onEngineStop={() => fgRef.current.zoomToFit(400)}
-                    linkOpacity={0.25}
-                    linkWidth={1.5}
+                    linkOpacity={0.3}
+                    linkWidth={2}
                     linkColor={() => '#ffffff'}
                     backgroundColor="rgba(0,0,0,0)"
                     showNavInfo={false}
@@ -497,22 +497,22 @@ function App() {
                 </div>
 
                 {/* Legend Overlay */}
-                <div className="absolute bottom-12 right-12 flex gap-8 items-center bg-white/[0.04] border border-white/10 rounded-full px-8 py-3 backdrop-blur-3xl shadow-2xl">
-                    <div className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-white" />
-                        <span className="text-[8px] font-bold tracking-widest uppercase text-white/40">Dev</span>
+                <div className="absolute bottom-12 right-12 flex gap-8 items-center bg-white/[0.04] border border-white/10 rounded-full px-8 py-4 backdrop-blur-3xl shadow-2xl">
+                    <div className="flex items-center gap-3">
+                        <div className="w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.4)]" />
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-white/50">Dev</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#333333] border border-white/10" />
-                        <span className="text-[8px] font-bold tracking-widest uppercase text-white/40">Repo</span>
+                    <div className="flex items-center gap-3">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#777777] border border-white/10" />
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-white/50">Repo</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] shadow-[0_0_8px_rgba(59,130,246,0.6)]" />
-                        <span className="text-[8px] font-bold tracking-widest uppercase text-white/40">Skill</span>
+                    <div className="flex items-center gap-3">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#3b82f6] shadow-[0_0_12px_rgba(59,130,246,0.6)]" />
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-white/50">Skill</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#10b981] shadow-[0_0_8px_rgba(16,185,129,0.4)]" />
-                        <span className="text-[8px] font-bold tracking-widest uppercase text-white/40">Evidence</span>
+                    <div className="flex items-center gap-3">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#10b981] shadow-[0_0_12px_rgba(16,185,129,0.4)]" />
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-white/50">Evidence</span>
                     </div>
                 </div>
             </div>
