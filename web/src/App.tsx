@@ -34,9 +34,37 @@ function App() {
   const [currentView, setCurrentView] = useState<'landing' | 'dashboard' | 'docs'>(token ? 'dashboard' : 'landing');
   const [selectedDoc, setSelectedDoc] = useState<number | null>(null);
   const fgRef = useRef<any>(null);
-
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (!containerRef.current) return;
+    
+    const updateDimensions = () => {
+        if (containerRef.current) {
+            setDimensions({
+                width: containerRef.current.clientWidth,
+                height: containerRef.current.clientHeight
+            });
+        }
+    };
+
+    updateDimensions();
+
+    const observer = new ResizeObserver(() => {
+        updateDimensions();
+    });
+    
+    observer.observe(containerRef.current);
+    window.addEventListener('resize', updateDimensions);
+
+    return () => {
+        observer.disconnect();
+        window.removeEventListener('resize', updateDimensions);
+    };
+  }, [currentView]); // Re-run when view changes to dashboard
+  
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const urlToken = params.get('token');
@@ -457,9 +485,11 @@ function App() {
             </div>
 
             {/* Right Visualization Area */}
-            <div className="flex-1 relative bg-black">
+            <div ref={containerRef} className="flex-1 relative bg-black overflow-hidden">
                 <ForceGraph3D
                     ref={fgRef}
+                    width={dimensions.width}
+                    height={dimensions.height}
                     graphData={graphData}
                     nodeLabel="label"
                     nodeColor={(node: any) => {
