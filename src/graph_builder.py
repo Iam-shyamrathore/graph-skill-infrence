@@ -90,7 +90,12 @@ class GitHubFetcher:
         results = []
         
         try:
-            for commit in commits[:limit]:
+            # We use a manual index because PyGithub PaginatedList can be flaky during iteration
+            for i in range(limit):
+                try:
+                    commit = commits[i]
+                except Exception: # Catch EVERYTHING (IndexError, GithubException, etc.)
+                    break
                 # We need detailed data for tf-idf (patch/diff)
                 # Note: getting files for every commit is expensive (N+1 API calls)
                 # Optimization: We sleep briefly to avoid secondary rate limits
@@ -172,8 +177,12 @@ class HINBuilder:
             self.graph.add_edge(f"dev:{self.username}", repo_node_id, type="contributes", weight=1.0)
             
             # 3. Commit Nodes
-            commits = self.fetcher.get_commits(repo['object'], self.username)
-            all_commits_data.extend(commits) # Collect raw data
+            try:
+                commits = self.fetcher.get_commits(repo['object'], self.username)
+                all_commits_data.extend(commits) # Collect raw data
+            except Exception as e:
+                print(f"Warning: Failed to fetch commits for {repo['name']}: {e}")
+                continue
             
             for commit in commits:
                 commit_node_id = f"commit:{commit['sha'][:7]}"

@@ -1,0 +1,721 @@
+{
+  "developer": "Kaos599",
+  "metadata": {
+    "name": "Harsh ",
+    "bio": "Love everything Tech & Science",
+    "repo_count": 30,
+    "commit_count": 543
+  },
+  "convergence_history": [
+    {
+      "iteration": 1,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 2,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 3,
+      "reward": 0.52,
+      "max_confidence_change": 0.1
+    },
+    {
+      "iteration": 4,
+      "reward": 0.97,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 5,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 6,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 7,
+      "reward": 0.94,
+      "max_confidence_change": 0.45
+    },
+    {
+      "iteration": 8,
+      "reward": 0.9033333333333333,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 9,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 10,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 11,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 12,
+      "reward": 0.8,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 13,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 14,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 15,
+      "reward": 0.97,
+      "max_confidence_change": 0.475
+    }
+  ],
+  "skills": [
+    {
+      "name": "Git",
+      "metrics": {
+        "belief": 0.21692677835666524,
+        "plausibility": 1.0,
+        "uncertainty": 0.7830732216433347,
+        "path_count": 3,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/EZ-Assignment",
+              "skill:Git"
+            ],
+            "belief": 0.07827622265505517,
+            "uncertainty": 0.9217237773449448
+          },
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/NextDimension-Assignment",
+              "skill:Git"
+            ],
+            "belief": 0.07827622265505517,
+            "uncertainty": 0.9217237773449448
+          },
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Invsto_Assignment",
+              "skill:Git"
+            ],
+            "belief": 0.07827622265505517,
+            "uncertainty": 0.9217237773449448
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Python",
+      "metrics": {
+        "belief": 0.20292994281935192,
+        "plausibility": 1.0,
+        "uncertainty": 0.797070057180648,
+        "path_count": 3,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/VIT-GPA-Calculator",
+              "skill:Python"
+            ],
+            "belief": 0.08088802854598492,
+            "uncertainty": 0.919111971454015
+          },
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/PeerPay",
+              "skill:Python"
+            ],
+            "belief": 0.06875482426408719,
+            "uncertainty": 0.9312451757359128
+          },
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/txtify-clone",
+              "skill:Python"
+            ],
+            "belief": 0.06875482426408719,
+            "uncertainty": 0.9312451757359128
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Natural Language Processing (NLP)",
+      "metrics": {
+        "belief": 0.15768744419772068,
+        "plausibility": 1.0,
+        "uncertainty": 0.8423125558022793,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Tathya-Fact-Checking-System",
+              "skill:Natural_Language_Processing_(NLP)"
+            ],
+            "belief": 0.08222412550651599,
+            "uncertainty": 0.917775874493484
+          },
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/BetterRAG",
+              "skill:Natural_Language_Processing_(NLP)"
+            ],
+            "belief": 0.08222412550651599,
+            "uncertainty": 0.917775874493484
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Machine Learning",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Machine-Learning-Roadmap",
+              "skill:Machine_Learning"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Retrieval Augmented Generation (RAG)",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/BetterRAG",
+              "skill:Retrieval_Augmented_Generation_(RAG)"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Vector Embeddings",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/BetterRAG",
+              "skill:Vector_Embeddings"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Camelot",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/VIT-GPA-Calculator",
+              "skill:Camelot"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Pandas",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/VIT-GPA-Calculator",
+              "skill:Pandas"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Object Detection",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Darzy-AI-Assignment",
+              "skill:Object_Detection"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Computer Vision",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Darzy-AI-Assignment",
+              "skill:Computer_Vision"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Deep Learning",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Darzy-AI-Assignment",
+              "skill:Deep_Learning"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "FastAPI",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Tathya-Fact-Checking-System",
+              "skill:FastAPI"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Streamlit",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Tathya-Fact-Checking-System",
+              "skill:Streamlit"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Web Scraping",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/txtify-clone",
+              "skill:Web_Scraping"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Text Processing",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/txtify-clone",
+              "skill:Text_Processing"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "SQL",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/PeerPay",
+              "skill:SQL"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "RESTful APIs",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/PeerPay",
+              "skill:RESTful_APIs"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Generative AI",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/AI-Content-Studio",
+              "skill:Generative_AI"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures and Algorithms",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Invsto_Assignment",
+              "skill:Data_Structures_and_Algorithms"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Science",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Machine-Learning-Roadmap",
+              "skill:Data_Science"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Code Implementation",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/SHL-Assignment",
+              "skill:Code_Implementation"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Machine Learning Model Development",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/AI-Content-Studio",
+              "skill:Machine_Learning_Model_Development"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Algorithmic Design",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/SHL-Assignment",
+              "skill:Algorithmic_Design"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/SHL-Assignment",
+              "skill:Data_Structures"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Software Architecture (for AI applications)",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/AI-Content-Studio",
+              "skill:Software_Architecture_(for_AI_applications)"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Statistical Modeling",
+      "metrics": {
+        "belief": 0.08978862165021596,
+        "plausibility": 1.0,
+        "uncertainty": 0.910211378349784,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/Machine-Learning-Roadmap",
+              "skill:Statistical_Modeling"
+            ],
+            "belief": 0.08978862165021596,
+            "uncertainty": 0.910211378349784
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Modeling",
+      "metrics": {
+        "belief": 0.08978862165021596,
+        "plausibility": 1.0,
+        "uncertainty": 0.910211378349784,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/EZ-Assignment",
+              "skill:Data_Modeling"
+            ],
+            "belief": 0.08978862165021596,
+            "uncertainty": 0.910211378349784
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Software Architecture (Conceptualization)",
+      "metrics": {
+        "belief": 0.08076273294451179,
+        "plausibility": 1.0,
+        "uncertainty": 0.9192372670554882,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Kaos599",
+              "repo:Kaos599/EZ-Assignment",
+              "skill:Software_Architecture_(Conceptualization)"
+            ],
+            "belief": 0.08076273294451179,
+            "uncertainty": 0.9192372670554882
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    }
+  ]
+}

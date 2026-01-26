@@ -1,0 +1,787 @@
+{
+  "developer": "sc30ash",
+  "metadata": {
+    "name": "Ashmit Bhardwaj",
+    "bio": "Coding on a caffeine-controlled clock.",
+    "repo_count": 30,
+    "commit_count": 152
+  },
+  "convergence_history": [
+    {
+      "iteration": 1,
+      "reward": 0.988,
+      "max_confidence_change": 0.49
+    },
+    {
+      "iteration": 2,
+      "reward": 0.94,
+      "max_confidence_change": 0.45
+    },
+    {
+      "iteration": 3,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 4,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 5,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 6,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 7,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 8,
+      "reward": 0.9,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 9,
+      "reward": 0.97,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 10,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 11,
+      "reward": 0.8366666666666667,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 12,
+      "reward": 0.7466666666666666,
+      "max_confidence_change": 0.4
+    },
+    {
+      "iteration": 13,
+      "reward": 0.97,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 14,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 15,
+      "reward": 0.8,
+      "max_confidence_change": 0.5
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "metrics": {
+        "belief": 0.22612505128852842,
+        "plausibility": 1.0,
+        "uncertainty": 0.7738749487114717,
+        "path_count": 4,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/CIFAR-10-VGG-19",
+              "skill:Python"
+            ],
+            "belief": 0.06869946182460145,
+            "uncertainty": 0.9313005381753986
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Dr.-Semmelweis-and-the-Discovery-of-Handwashing",
+              "skill:Python"
+            ],
+            "belief": 0.06106618828853462,
+            "uncertainty": 0.9389338117114654
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Visualization-of-Nobel-Prize-winners",
+              "skill:Python"
+            ],
+            "belief": 0.07251609859263486,
+            "uncertainty": 0.9274839014073651
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/College-admissions",
+              "skill:Python"
+            ],
+            "belief": 0.04579964121640096,
+            "uncertainty": 0.954200358783599
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Analysis",
+      "metrics": {
+        "belief": 0.21692677835666524,
+        "plausibility": 1.0,
+        "uncertainty": 0.7830732216433347,
+        "path_count": 3,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Android-Apps-Data-Analysis",
+              "skill:Data_Analysis"
+            ],
+            "belief": 0.07827622265505517,
+            "uncertainty": 0.9217237773449448
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Weather-Data-Analysis",
+              "skill:Data_Analysis"
+            ],
+            "belief": 0.07827622265505517,
+            "uncertainty": 0.9217237773449448
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Super-Bowl-Data-Analysis",
+              "skill:Data_Analysis"
+            ],
+            "belief": 0.07827622265505517,
+            "uncertainty": 0.9217237773449448
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Deep Learning",
+      "metrics": {
+        "belief": 0.2100070083347408,
+        "plausibility": 0.9999999999999999,
+        "uncertainty": 0.789992991665259,
+        "path_count": 3,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/CIFAR-10-VGG-19",
+              "skill:Deep_Learning"
+            ],
+            "belief": 0.079540509350942,
+            "uncertainty": 0.920459490649058
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/CNN-for-fashion",
+              "skill:Deep_Learning"
+            ],
+            "belief": 0.0755634838833949,
+            "uncertainty": 0.924436516116605
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/COVID-19-Radiolography-predictions",
+              "skill:Deep_Learning"
+            ],
+            "belief": 0.0715864584158478,
+            "uncertainty": 0.9284135415841522
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Convolutional Neural Networks (CNNs)",
+      "metrics": {
+        "belief": 0.16933621650618347,
+        "plausibility": 1.0,
+        "uncertainty": 0.8306637834938165,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/CIFAR-10-VGG-19",
+              "skill:Convolutional_Neural_Networks_(CNNs)"
+            ],
+            "belief": 0.08859241637244618,
+            "uncertainty": 0.9114075836275538
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/CNN-for-fashion",
+              "skill:Convolutional_Neural_Networks_(CNNs)"
+            ],
+            "belief": 0.08859241637244618,
+            "uncertainty": 0.9114075836275538
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Visualization",
+      "metrics": {
+        "belief": 0.1516668964936523,
+        "plausibility": 0.9999999999999999,
+        "uncertainty": 0.8483331035063476,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Visualization-of-Nobel-Prize-winners",
+              "skill:Data_Visualization"
+            ],
+            "belief": 0.08358172381723246,
+            "uncertainty": 0.9164182761827675
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Super-Bowl-Data-Analysis",
+              "skill:Data_Visualization"
+            ],
+            "belief": 0.07429486561531774,
+            "uncertainty": 0.9257051343846823
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Pandas",
+      "metrics": {
+        "belief": 0.13908623447350915,
+        "plausibility": 1.0,
+        "uncertainty": 0.8609137655264908,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Dr.-Semmelweis-and-the-Discovery-of-Handwashing",
+              "skill:Pandas"
+            ],
+            "belief": 0.06732427358855873,
+            "uncertainty": 0.9326757264114413
+          },
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Visualization-of-Nobel-Prize-winners",
+              "skill:Pandas"
+            ],
+            "belief": 0.07694202695835284,
+            "uncertainty": 0.9230579730416472
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Recommender Systems",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/movie-recommender",
+              "skill:Recommender_Systems"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Siamese Neural Networks",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Siamese-Neural-Network",
+              "skill:Siamese_Neural_Networks"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "One-shot Learning",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Siamese-Neural-Network",
+              "skill:One-shot_Learning"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Preprocessing",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/House-Prices-Data-Analysis",
+              "skill:Data_Preprocessing"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Exploratory Data Analysis (EDA)",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/House-Prices-Data-Analysis",
+              "skill:Exploratory_Data_Analysis_(EDA)"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Neural Networks",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/twitter-sentiment-analysis",
+              "skill:Neural_Networks"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Sentiment Analysis",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/twitter-sentiment-analysis",
+              "skill:Sentiment_Analysis"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Natural Language Processing (NLP)",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/twitter-sentiment-analysis",
+              "skill:Natural_Language_Processing_(NLP)"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Android Development",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Android-Apps-Data-Analysis",
+              "skill:Android_Development"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "YouTube Data API Integration",
+      "metrics": {
+        "belief": 0.10509187131710562,
+        "plausibility": 1.0,
+        "uncertainty": 0.8949081286828944,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Youtube-Podcast-Autogeneration",
+              "skill:YouTube_Data_API_Integration"
+            ],
+            "belief": 0.10509187131710562,
+            "uncertainty": 0.8949081286828944
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Text-to-Speech (TTS) Synthesis",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Youtube-Podcast-Autogeneration",
+              "skill:Text-to-Speech_(TTS)_Synthesis"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Predictive Modeling (Regression)",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/House-Prices-Data-Analysis",
+              "skill:Predictive_Modeling_(Regression)"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Computer Vision",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/COVID-19-Radiolography-predictions",
+              "skill:Computer_Vision"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Scala",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Github-History-of-Scala",
+              "skill:Scala"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Video Processing / Generative Video",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Youtube-Podcast-Autogeneration",
+              "skill:Video_Processing_/_Generative_Video"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "SQL",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/College-admissions",
+              "skill:SQL"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Statistical Analysis",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Super-Bowl-Data-Analysis",
+              "skill:Statistical_Analysis"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Manipulation",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Weather-Data-Analysis",
+              "skill:Data_Manipulation"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Medical Image Analysis",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/COVID-19-Radiolography-predictions",
+              "skill:Medical_Image_Analysis"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Image Classification",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/CNN-for-fashion",
+              "skill:Image_Classification"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Java",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Android-Apps-Data-Analysis",
+              "skill:Java"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures and Algorithms",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/College-admissions",
+              "skill:Data_Structures_and_Algorithms"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Matplotlib",
+      "metrics": {
+        "belief": 0.08076273294451179,
+        "plausibility": 1.0,
+        "uncertainty": 0.9192372670554882,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:sc30ash",
+              "repo:sc30ash/Dr.-Semmelweis-and-the-Discovery-of-Handwashing",
+              "skill:Matplotlib"
+            ],
+            "belief": 0.08076273294451179,
+            "uncertainty": 0.9192372670554882
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    }
+  ]
+}

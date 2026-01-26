@@ -1,0 +1,730 @@
+{
+  "iam-shyamrathore": {
+    "success": true,
+    "profile": {
+      "developer": "iam-shyamrathore",
+      "metadata": {
+        "name": "shyam",
+        "bio": "\ud83d\udc4b Hi, I'm Shyam, a passionate Computer Science student at Galgotias University, Noida, graduating in 2026. I specialize in Java, C++, C, and Python, with hands",
+        "repo_count": 19,
+        "commit_count": 170
+      },
+      "convergence_history": [
+        {
+          "iteration": 1,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 2,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 3,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 4,
+          "reward": 0.9333333333333333,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 5,
+          "reward": 0.9333333333333333,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 6,
+          "reward": 0.8666666666666667,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 7,
+          "reward": 0.8733333333333333,
+          "max_confidence_change": 0.45
+        },
+        {
+          "iteration": 8,
+          "reward": 0.0,
+          "max_confidence_change": 0.0
+        },
+        {
+          "iteration": 9,
+          "reward": 0.7166666666666666,
+          "max_confidence_change": 0.375
+        },
+        {
+          "iteration": 10,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 11,
+          "reward": 0.9333333333333333,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 12,
+          "reward": 0.0,
+          "max_confidence_change": 0.0
+        },
+        {
+          "iteration": 13,
+          "reward": 0.9033333333333333,
+          "max_confidence_change": 0.475
+        },
+        {
+          "iteration": 14,
+          "reward": 0.9,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 15,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        }
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "metrics": {
+            "belief": 0.2398398204477408,
+            "plausibility": 0.9999999999999998,
+            "uncertainty": 0.760160179552259,
+            "path_count": 8,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Java",
+          "metrics": {
+            "belief": 0.1090688935582386,
+            "plausibility": 0.9999999999999999,
+            "uncertainty": 0.8909311064417613,
+            "path_count": 2,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Machine Learning",
+          "metrics": {
+            "belief": 0.10530447561727833,
+            "plausibility": 0.9999999999999999,
+            "uncertainty": 0.8946955243827216,
+            "path_count": 2,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "SQL",
+          "metrics": {
+            "belief": 0.0995290330038848,
+            "plausibility": 1.0,
+            "uncertainty": 0.9004709669961152,
+            "path_count": 2,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Java Swing",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "YOLOv10",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Unity (Game Engine)",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "C#",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Neural Networks",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Computer Vision",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Streamlit",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "React.js",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "JavaScript",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Data Structures",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Algorithms",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Pygame",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Git",
+          "metrics": {
+            "belief": 0.06759328243151862,
+            "plausibility": 1.0,
+            "uncertainty": 0.9324067175684814,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Machine Learning Algorithms",
+          "metrics": {
+            "belief": 0.0649908045490252,
+            "plausibility": 1.0,
+            "uncertainty": 0.9350091954509748,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "2D Game Development",
+          "metrics": {
+            "belief": 0.06233761432272996,
+            "plausibility": 1.0,
+            "uncertainty": 0.93766238567727,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Deep Learning",
+          "metrics": {
+            "belief": 0.06233761432272996,
+            "plausibility": 1.0,
+            "uncertainty": 0.93766238567727,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Data Structures & Algorithms",
+          "metrics": {
+            "belief": 0.06233761432272996,
+            "plausibility": 1.0,
+            "uncertainty": 0.93766238567727,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Tailwind CSS",
+          "metrics": {
+            "belief": 0.06233761432272996,
+            "plausibility": 1.0,
+            "uncertainty": 0.93766238567727,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "SMTP (Simple Mail Transfer Protocol)",
+          "metrics": {
+            "belief": 0.06233761432272996,
+            "plausibility": 1.0,
+            "uncertainty": 0.93766238567727,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Text Processing",
+          "metrics": {
+            "belief": 0.05963054258095786,
+            "plausibility": 1.0,
+            "uncertainty": 0.9403694574190421,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "MIME (Multipurpose Internet Mail Extensions)",
+          "metrics": {
+            "belief": 0.05963054258095786,
+            "plausibility": 1.0,
+            "uncertainty": 0.9403694574190421,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        }
+      ]
+    },
+    "processing_time_minutes": 5.91,
+    "timestamp": "2026-01-20T20:42:50.814250"
+  },
+  "Kaos599": {
+    "success": true,
+    "profile": {
+      "developer": "Kaos599",
+      "metadata": {
+        "name": "Harsh ",
+        "bio": "Love everything Tech & Science",
+        "repo_count": 30,
+        "commit_count": 543
+      },
+      "convergence_history": [
+        {
+          "iteration": 1,
+          "reward": 0.0,
+          "max_confidence_change": 0.0
+        },
+        {
+          "iteration": 2,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 3,
+          "reward": 0.52,
+          "max_confidence_change": 0.1
+        },
+        {
+          "iteration": 4,
+          "reward": 0.97,
+          "max_confidence_change": 0.475
+        },
+        {
+          "iteration": 5,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 6,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 7,
+          "reward": 0.94,
+          "max_confidence_change": 0.45
+        },
+        {
+          "iteration": 8,
+          "reward": 0.9033333333333333,
+          "max_confidence_change": 0.475
+        },
+        {
+          "iteration": 9,
+          "reward": 0.9333333333333333,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 10,
+          "reward": 1.0,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 11,
+          "reward": 0.9333333333333333,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 12,
+          "reward": 0.8,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 13,
+          "reward": 0.9333333333333333,
+          "max_confidence_change": 0.5
+        },
+        {
+          "iteration": 14,
+          "reward": 0.0,
+          "max_confidence_change": 0.0
+        },
+        {
+          "iteration": 15,
+          "reward": 0.97,
+          "max_confidence_change": 0.475
+        }
+      ],
+      "skills": [
+        {
+          "name": "Git",
+          "metrics": {
+            "belief": 0.21692677835666524,
+            "plausibility": 1.0,
+            "uncertainty": 0.7830732216433347,
+            "path_count": 3,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Python",
+          "metrics": {
+            "belief": 0.20292994281935192,
+            "plausibility": 1.0,
+            "uncertainty": 0.797070057180648,
+            "path_count": 3,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Natural Language Processing (NLP)",
+          "metrics": {
+            "belief": 0.15768744419772068,
+            "plausibility": 1.0,
+            "uncertainty": 0.8423125558022793,
+            "path_count": 2,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Machine Learning",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Retrieval Augmented Generation (RAG)",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Vector Embeddings",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Camelot",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Pandas",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Object Detection",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Computer Vision",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Deep Learning",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "FastAPI",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Streamlit",
+          "metrics": {
+            "belief": 0.10672623541818728,
+            "plausibility": 1.0,
+            "uncertainty": 0.8932737645818127,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Web Scraping",
+          "metrics": {
+            "belief": 0.1026170598142503,
+            "plausibility": 1.0,
+            "uncertainty": 0.8973829401857497,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Text Processing",
+          "metrics": {
+            "belief": 0.1026170598142503,
+            "plausibility": 1.0,
+            "uncertainty": 0.8973829401857497,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "SQL",
+          "metrics": {
+            "belief": 0.1026170598142503,
+            "plausibility": 1.0,
+            "uncertainty": 0.8973829401857497,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "RESTful APIs",
+          "metrics": {
+            "belief": 0.1026170598142503,
+            "plausibility": 1.0,
+            "uncertainty": 0.8973829401857497,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Generative AI",
+          "metrics": {
+            "belief": 0.1026170598142503,
+            "plausibility": 1.0,
+            "uncertainty": 0.8973829401857497,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Data Structures and Algorithms",
+          "metrics": {
+            "belief": 0.09842781208852099,
+            "plausibility": 1.0,
+            "uncertainty": 0.901572187911479,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Data Science",
+          "metrics": {
+            "belief": 0.09842781208852099,
+            "plausibility": 1.0,
+            "uncertainty": 0.901572187911479,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Code Implementation",
+          "metrics": {
+            "belief": 0.09842781208852099,
+            "plausibility": 1.0,
+            "uncertainty": 0.901572187911479,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Machine Learning Model Development",
+          "metrics": {
+            "belief": 0.09842781208852099,
+            "plausibility": 1.0,
+            "uncertainty": 0.901572187911479,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Algorithmic Design",
+          "metrics": {
+            "belief": 0.09415348828572294,
+            "plausibility": 1.0,
+            "uncertainty": 0.9058465117142771,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Data Structures",
+          "metrics": {
+            "belief": 0.09415348828572294,
+            "plausibility": 1.0,
+            "uncertainty": 0.9058465117142771,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Software Architecture (for AI applications)",
+          "metrics": {
+            "belief": 0.09415348828572294,
+            "plausibility": 1.0,
+            "uncertainty": 0.9058465117142771,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Statistical Modeling",
+          "metrics": {
+            "belief": 0.08978862165021596,
+            "plausibility": 1.0,
+            "uncertainty": 0.910211378349784,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Data Modeling",
+          "metrics": {
+            "belief": 0.08978862165021596,
+            "plausibility": 1.0,
+            "uncertainty": 0.910211378349784,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        },
+        {
+          "name": "Software Architecture (Conceptualization)",
+          "metrics": {
+            "belief": 0.08076273294451179,
+            "plausibility": 1.0,
+            "uncertainty": 0.9192372670554882,
+            "path_count": 1,
+            "math_model": "Josang-Yager-Hybrid"
+          }
+        }
+      ]
+    },
+    "processing_time_minutes": 12.93,
+    "timestamp": "2026-01-20T20:56:16.864611"
+  },
+  "sc30ash": {
+    "success": false,
+    "error": "list index out of range"
+  },
+  "nishant-Tiwari24": {
+    "success": false,
+    "error": "list index out of range"
+  },
+  "Shpota": {
+    "success": false,
+    "error": "list index out of range"
+  }
+}

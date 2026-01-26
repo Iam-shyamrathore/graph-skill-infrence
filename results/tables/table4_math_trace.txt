@@ -1,0 +1,22 @@
+MATHEMATICAL TRACE: Git (User: Kaos599)
+============================================================
+
+Path 1:
+  Route: dev:Kaos599 -> repo:Kaos599/EZ-Assignment -> skill:Git
+  Mass m({skill}): 0.0783
+  Mass m(Theta): 0.9217
+
+Path 2:
+  Route: dev:Kaos599 -> repo:Kaos599/NextDimension-Assignment -> skill:Git
+  Mass m({skill}): 0.0783
+  Mass m(Theta): 0.9217
+
+Path 3:
+  Route: dev:Kaos599 -> repo:Kaos599/Invsto_Assignment -> skill:Git
+  Mass m({skill}): 0.0783
+  Mass m(Theta): 0.9217
+
+Final after Dempster fusion:
+  Belief: 0.2169
+  Plausibility: 1.0000
+  Uncertainty interval: [0.22, 1.00]

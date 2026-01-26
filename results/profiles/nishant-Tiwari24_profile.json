@@ -1,0 +1,598 @@
+{
+  "developer": "nishant-Tiwari24",
+  "metadata": {
+    "name": "Nishant Tiwari",
+    "bio": null,
+    "repo_count": 30,
+    "commit_count": 186
+  },
+  "convergence_history": [
+    {
+      "iteration": 1,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 2,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 3,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 4,
+      "reward": 0.94,
+      "max_confidence_change": 0.45
+    },
+    {
+      "iteration": 5,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 6,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 7,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 8,
+      "reward": 0.94,
+      "max_confidence_change": 0.45
+    },
+    {
+      "iteration": 9,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 10,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 11,
+      "reward": 0.8,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 12,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 13,
+      "reward": 0.7833333333333332,
+      "max_confidence_change": 0.375
+    },
+    {
+      "iteration": 14,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 15,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "metrics": {
+        "belief": 0.19818679261086083,
+        "plausibility": 0.9999999999999999,
+        "uncertainty": 0.8018132073891391,
+        "path_count": 3,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/placement-platform",
+              "skill:JavaScript"
+            ],
+            "belief": 0.05728598253243438,
+            "uncertainty": 0.9427140174675657
+          },
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/react-and-javascript-projects",
+              "skill:JavaScript"
+            ],
+            "belief": 0.08183711790347768,
+            "uncertainty": 0.9181628820965223
+          },
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/infinitus2024",
+              "skill:JavaScript"
+            ],
+            "belief": 0.07365340611312993,
+            "uncertainty": 0.92634659388687
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "React",
+      "metrics": {
+        "belief": 0.16648003687774518,
+        "plausibility": 1.0,
+        "uncertainty": 0.8335199631222548,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/react-and-javascript-projects",
+              "skill:React"
+            ],
+            "belief": 0.08925551625687846,
+            "uncertainty": 0.9107444837431216
+          },
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/infinitus2024",
+              "skill:React"
+            ],
+            "belief": 0.08479274044403452,
+            "uncertainty": 0.9152072595559655
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Java",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/spring-blog",
+              "skill:Java"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Spring Framework",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/spring-blog",
+              "skill:Spring_Framework"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Blockchain",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/Rakshak2.0",
+              "skill:Blockchain"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Artificial Intelligence",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/Rakshak2.0",
+              "skill:Artificial_Intelligence"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Version Control Systems (VCS) Internals",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/build-your-own-git",
+              "skill:Version_Control_Systems_(VCS)_Internals"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Object-Oriented Programming",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/object-oriented-programming",
+              "skill:Object-Oriented_Programming"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Next.js",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/infinitus2024",
+              "skill:Next.js"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Breadth-First Search (BFS)",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/bfs-maze",
+              "skill:Breadth-First_Search_(BFS)"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures and Algorithms",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/3d-dsa-project",
+              "skill:Data_Structures_and_Algorithms"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Queueing Systems",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/Rakshak2.0",
+              "skill:Queueing_Systems"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Rust",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/warp-terminal",
+              "skill:Rust"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Command-Line Interface (CLI) Development",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/build-your-own-git",
+              "skill:Command-Line_Interface_(CLI)_Development"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Decision Tree",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/machine-learning-algorithms",
+              "skill:Decision_Tree"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "K-Nearest Neighbors (KNN)",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/machine-learning-algorithms",
+              "skill:K-Nearest_Neighbors_(KNN)"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Graph Algorithms",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/bfs-maze",
+              "skill:Graph_Algorithms"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Computational Geometry",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/3d-dsa-project",
+              "skill:Computational_Geometry"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Terminal Emulation",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/warp-terminal",
+              "skill:Terminal_Emulation"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "File System Programming",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/build-your-own-git",
+              "skill:File_System_Programming"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures (Queue)",
+      "metrics": {
+        "belief": 0.08978862165021596,
+        "plausibility": 1.0,
+        "uncertainty": 0.910211378349784,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/bfs-maze",
+              "skill:Data_Structures_(Queue)"
+            ],
+            "belief": 0.08978862165021596,
+            "uncertainty": 0.910211378349784
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "SQL",
+      "metrics": {
+        "belief": 0.08532722639008238,
+        "plausibility": 1.0,
+        "uncertainty": 0.9146727736099176,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/placement-platform",
+              "skill:SQL"
+            ],
+            "belief": 0.08532722639008238,
+            "uncertainty": 0.9146727736099176
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "RESTful APIs",
+      "metrics": {
+        "belief": 0.07608791321004268,
+        "plausibility": 1.0,
+        "uncertainty": 0.9239120867899573,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:nishant-Tiwari24",
+              "repo:nishant-Tiwari24/placement-platform",
+              "skill:RESTful_APIs"
+            ],
+            "belief": 0.07608791321004268,
+            "uncertainty": 0.9239120867899573
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    }
+  ]
+}

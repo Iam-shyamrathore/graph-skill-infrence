@@ -13,7 +13,7 @@ To model the decay of evidence strength through long graph paths, we use the \te
 \end{equation}
 
 \subsubsection{Consensus and Conflict Reallocation}
-Standard Dempster normalization can lead to "Certainty Inflation" in conflicting graphs. We implement \textbf{Yager's Rule} re-defined for Subjective Logic. Instead of normalizing via $1-K$, the conflicting mass $K$ is re-allocated to \textbf{Uncertainty ($u$)}:
+Standard Dempster normalization can lead to "Certainty Inflation" in conflicting graphs. We implement \textbf{Yager's Rule} \cite{yager1987dempster} re-defined for Subjective Logic. Instead of normalizing via $1-K$, the conflicting mass $K$ is re-allocated to \textbf{Uncertainty ($u$)}:
 \begin{equation}
 u_{fused} = \frac{u_1 u_2 + K}{1} = u_1 u_2 + K
 \end{equation}

@@ -1,0 +1,883 @@
+{
+  "developer": "Shpota",
+  "metadata": {
+    "name": "Sasha Shpota",
+    "bio": "\r\nBuilder \ud83d\udc68\u200d\ud83d\udcbb\r\n\r\n",
+    "repo_count": 30,
+    "commit_count": 471
+  },
+  "convergence_history": [
+    {
+      "iteration": 1,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 2,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 3,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 4,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 5,
+      "reward": 0.94,
+      "max_confidence_change": 0.45
+    },
+    {
+      "iteration": 6,
+      "reward": 0.8366666666666667,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 7,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 8,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 9,
+      "reward": 0.8666666666666667,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 10,
+      "reward": 0.8666666666666667,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 11,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 12,
+      "reward": 0.8499999999999999,
+      "max_confidence_change": 0.375
+    },
+    {
+      "iteration": 13,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 14,
+      "reward": 0.9033333333333333,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 15,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    }
+  ],
+  "skills": [
+    {
+      "name": "Kotlin",
+      "metrics": {
+        "belief": 0.2914441171501744,
+        "plausibility": 1.0000000000000002,
+        "uncertainty": 0.7085558828498258,
+        "path_count": 5,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/twitter-plugin",
+              "skill:Kotlin"
+            ],
+            "belief": 0.06658490134014665,
+            "uncertainty": 0.9334150986598534
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/jvm-static-issue",
+              "skill:Kotlin"
+            ],
+            "belief": 0.06658490134014665,
+            "uncertainty": 0.9334150986598534
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/mntr",
+              "skill:Kotlin"
+            ],
+            "belief": 0.06658490134014665,
+            "uncertainty": 0.9334150986598534
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/quarkus-kotlin-native",
+              "skill:Kotlin"
+            ],
+            "belief": 0.06658490134014665,
+            "uncertainty": 0.9334150986598534
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/abcdator",
+              "skill:Kotlin"
+            ],
+            "belief": 0.06658490134014665,
+            "uncertainty": 0.9334150986598534
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Docker",
+      "metrics": {
+        "belief": 0.21463854850097513,
+        "plausibility": 1.0,
+        "uncertainty": 0.7853614514990249,
+        "path_count": 3,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/mntr",
+              "skill:Docker"
+            ],
+            "belief": 0.07868892103699536,
+            "uncertainty": 0.9213110789630047
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/ghcr-test",
+              "skill:Docker"
+            ],
+            "belief": 0.07475447498514559,
+            "uncertainty": 0.9252455250148544
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/fr-builders",
+              "skill:Docker"
+            ],
+            "belief": 0.07868892103699536,
+            "uncertainty": 0.9213110789630047
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Quarkus",
+      "metrics": {
+        "belief": 0.16933621650618347,
+        "plausibility": 1.0,
+        "uncertainty": 0.8306637834938165,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/quarkus-kotlin-native",
+              "skill:Quarkus"
+            ],
+            "belief": 0.08859241637244618,
+            "uncertainty": 0.9114075836275538
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/quarkus-grpc-alpine-issue",
+              "skill:Quarkus"
+            ],
+            "belief": 0.08859241637244618,
+            "uncertainty": 0.9114075836275538
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Solana",
+      "metrics": {
+        "belief": 0.16648003687774518,
+        "plausibility": 1.0,
+        "uncertainty": 0.8335199631222548,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/game-contract",
+              "skill:Solana"
+            ],
+            "belief": 0.08479274044403452,
+            "uncertainty": 0.9152072595559655
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/game",
+              "skill:Solana"
+            ],
+            "belief": 0.08925551625687846,
+            "uncertainty": 0.9107444837431216
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "GitHub Actions",
+      "metrics": {
+        "belief": 0.1636009502552854,
+        "plausibility": 1.0,
+        "uncertainty": 0.8363990497447147,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/ghcr-test",
+              "skill:GitHub_Actions"
+            ],
+            "belief": 0.08094353188630882,
+            "uncertainty": 0.9190564681136912
+          },
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/hello-gh-action",
+              "skill:GitHub_Actions"
+            ],
+            "belief": 0.08993725765145423,
+            "uncertainty": 0.9100627423485458
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "YAML",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/hello-gh-action",
+              "skill:YAML"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "gRPC",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/quarkus-grpc-alpine-issue",
+              "skill:gRPC"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Android Development",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/ProgressBarExample",
+              "skill:Android_Development"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Java",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/ProgressBarExample",
+              "skill:Java"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Angular",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/countries",
+              "skill:Angular"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "TypeScript",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/countries",
+              "skill:TypeScript"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "JavaScript",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/countries",
+              "skill:JavaScript"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "React",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/mntr",
+              "skill:React"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Next.js",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/game",
+              "skill:Next.js"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Web3.js",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/game",
+              "skill:Web3.js"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "IntelliJ Platform SDK",
+      "metrics": {
+        "belief": 0.10672623541818728,
+        "plausibility": 1.0,
+        "uncertainty": 0.8932737645818127,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/twitter-plugin",
+              "skill:IntelliJ_Platform_SDK"
+            ],
+            "belief": 0.10672623541818728,
+            "uncertainty": 0.8932737645818127
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "http4k",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/abcdator",
+              "skill:http4k"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Rust",
+      "metrics": {
+        "belief": 0.1026170598142503,
+        "plausibility": 1.0,
+        "uncertainty": 0.8973829401857497,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/game-contract",
+              "skill:Rust"
+            ],
+            "belief": 0.1026170598142503,
+            "uncertainty": 0.8973829401857497
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Algorithms",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/abcdator",
+              "skill:Algorithms"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Shell Scripting",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/hello-gh-action",
+              "skill:Shell_Scripting"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Git Submodules",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/quarkus-grpc-alpine-issue",
+              "skill:Git_Submodules"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "HTML",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/sashashpota.com",
+              "skill:HTML"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Android Concurrency",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/ProgressBarExample",
+              "skill:Android_Concurrency"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "GraalVM",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/quarkus-kotlin-native",
+              "skill:GraalVM"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "JVM (Java Virtual Machine)",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/jvm-static-issue",
+              "skill:JVM_(Java_Virtual_Machine)"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Web3 Development",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/game-contract",
+              "skill:Web3_Development"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Twitter API",
+      "metrics": {
+        "belief": 0.09842781208852099,
+        "plausibility": 1.0,
+        "uncertainty": 0.901572187911479,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/twitter-plugin",
+              "skill:Twitter_API"
+            ],
+            "belief": 0.09842781208852099,
+            "uncertainty": 0.901572187911479
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Containerization",
+      "metrics": {
+        "belief": 0.09672858689987202,
+        "plausibility": 1.0,
+        "uncertainty": 0.903271413100128,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/ghcr-test",
+              "skill:Containerization"
+            ],
+            "belief": 0.09672858689987202,
+            "uncertainty": 0.903271413100128
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Web Server Configuration",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/sashashpota.com",
+              "skill:Web_Server_Configuration"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "DNS Management",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/sashashpota.com",
+              "skill:DNS_Management"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Compiler Debugging",
+      "metrics": {
+        "belief": 0.09415348828572294,
+        "plausibility": 1.0,
+        "uncertainty": 0.9058465117142771,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/jvm-static-issue",
+              "skill:Compiler_Debugging"
+            ],
+            "belief": 0.09415348828572294,
+            "uncertainty": 0.9058465117142771
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Front-end Development",
+      "metrics": {
+        "belief": 0.08978862165021596,
+        "plausibility": 1.0,
+        "uncertainty": 0.910211378349784,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/fr-builders",
+              "skill:Front-end_Development"
+            ],
+            "belief": 0.08978862165021596,
+            "uncertainty": 0.910211378349784
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Metaprogramming",
+      "metrics": {
+        "belief": 0.08532722639008238,
+        "plausibility": 1.0,
+        "uncertainty": 0.9146727736099176,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/monkey",
+              "skill:Metaprogramming"
+            ],
+            "belief": 0.08532722639008238,
+            "uncertainty": 0.9146727736099176
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Fuzz Testing",
+      "metrics": {
+        "belief": 0.08076273294451179,
+        "plausibility": 1.0,
+        "uncertainty": 0.9192372670554882,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:Shpota",
+              "repo:Shpota/monkey",
+              "skill:Fuzz_Testing"
+            ],
+            "belief": 0.08076273294451179,
+            "uncertainty": 0.9192372670554882
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    }
+  ]
+}

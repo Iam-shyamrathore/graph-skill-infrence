@@ -20,7 +20,7 @@ Where:
 \end{itemize}
 
 \subsection{Algorithm: MCTS for Reasoning with Trees (RwT)}
-We adopt the \textbf{Reasoning with Trees (RwT)} paradigm which utilizes MCTS to iteratively refine reasoning paths.
+We adopt the \textbf{Reasoning with Trees (RwT)} paradigm \cite{luo2024reasoning} which utilizes MCTS to iteratively refine reasoning paths, similar to ReKG-MCTS \cite{zhou2024rekg}.
 
 \subsubsection{Path-Aware Selection}
 Nodes are selected using \textbf{PUCT} (Predictor + UCB). Unlike standard MCTS, our predictor $P(s,a)$ is informed by both structural TF-IDF weights and repository metadata (Stars, Topics).

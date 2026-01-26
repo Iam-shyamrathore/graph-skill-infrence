@@ -43,6 +43,7 @@ class MCTSAgent:
         nodes = [n for n, d in graph.nodes(data=True) if d.get('type') in ['commit', 'repository']]
         nodes.sort(key=lambda x: 1 if 'repo' in x else 0) 
         self.root.untried_actions = nodes
+        self.convergence_history = []
 
     def select(self, node):
         while not node.is_fully_expanded():
@@ -132,12 +133,32 @@ class MCTSAgent:
     def run_exploration(self, iterations=10):
         print(f"--- Starting Advanced MCTS Exploration ({iterations} iterations) ---")
         self.session_skills = set() # Reset session memory
+        self.convergence_history = []
+        
         for i in range(iterations):
+            # Snapshot of skill edge weights for convergence tracking
+            old_weights = { (u, v): d.get('weight', 0) for u, v, d in self.graph.edges(data=True) if d.get('type') == 'implies' }
+            
             print(f"Iter {i+1}:")
             leaf = self.select(self.root)
             reward = self.simulate(leaf)
             self.backpropagate(leaf, reward)
             print(f"  Result: Reward={reward:.2f}")
+            
+            # Post-iteration check
+            new_weights = { (u, v): d.get('weight', 0) for u, v, d in self.graph.edges(data=True) if d.get('type') == 'implies' }
+            
+            # Calculate max change
+            max_change = 0.0
+            for key in new_weights:
+                old_w = old_weights.get(key, 0)
+                max_change = max(max_change, abs(new_weights[key] - old_w))
+            
+            self.convergence_history.append({
+                "iteration": i + 1,
+                "reward": reward,
+                "max_confidence_change": max_change
+            })
 
     def _get_diff_summary(self, commit_node_id):
         """Helper to aggregate diffs from outgoing edges."""

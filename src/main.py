@@ -58,8 +58,20 @@ def run_pipeline(username: str, iterations: int = 20):
     all_skills = [n for n, d in graph.nodes(data=True) if d.get('type') == 'skill']
     developer_node = f"dev:{username}"
     
+    # Metadata for validation
+    dev_data = graph.nodes[developer_node]
+    repo_nodes = [n for n, d in graph.nodes(data=True) if d.get('type') == 'repository']
+    commit_nodes = [n for n, d in graph.nodes(data=True) if d.get('type') == 'commit']
+    
     final_profile = {
         "developer": username,
+        "metadata": {
+            "name": dev_data.get('name'),
+            "bio": dev_data.get('bio'),
+            "repo_count": len(repo_nodes),
+            "commit_count": len(commit_nodes)
+        },
+        "convergence_history": agent.convergence_history,
         "skills": []
     }
     

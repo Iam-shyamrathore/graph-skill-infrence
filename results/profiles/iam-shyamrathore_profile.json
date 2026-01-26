@@ -1,0 +1,703 @@
+{
+  "developer": "iam-shyamrathore",
+  "metadata": {
+    "name": "shyam",
+    "bio": "\ud83d\udc4b Hi, I'm Shyam, a passionate Computer Science student at Galgotias University, Noida, graduating in 2026. I specialize in Java, C++, C, and Python, with hands",
+    "repo_count": 19,
+    "commit_count": 170
+  },
+  "convergence_history": [
+    {
+      "iteration": 1,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 2,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 3,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 4,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 5,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 6,
+      "reward": 0.8666666666666667,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 7,
+      "reward": 0.8733333333333333,
+      "max_confidence_change": 0.45
+    },
+    {
+      "iteration": 8,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 9,
+      "reward": 0.7166666666666666,
+      "max_confidence_change": 0.375
+    },
+    {
+      "iteration": 10,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 11,
+      "reward": 0.9333333333333333,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 12,
+      "reward": 0.0,
+      "max_confidence_change": 0.0
+    },
+    {
+      "iteration": 13,
+      "reward": 0.9033333333333333,
+      "max_confidence_change": 0.475
+    },
+    {
+      "iteration": 14,
+      "reward": 0.9,
+      "max_confidence_change": 0.5
+    },
+    {
+      "iteration": 15,
+      "reward": 1.0,
+      "max_confidence_change": 0.5
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "metrics": {
+        "belief": 0.2398398204477408,
+        "plausibility": 0.9999999999999998,
+        "uncertainty": 0.760160179552259,
+        "path_count": 8,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/2048-game-using-pygame",
+              "skill:Python"
+            ],
+            "belief": 0.037689338859553244,
+            "uncertainty": 0.9623106611404467
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Email-Automator",
+              "skill:Python"
+            ],
+            "belief": 0.03580487191657558,
+            "uncertainty": 0.9641951280834244
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Shyam_Galgotias_TruEstate_assignment",
+              "skill:Python"
+            ],
+            "belief": 0.02449807025870961,
+            "uncertainty": 0.9755019297412904
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/flashcard_generator",
+              "skill:Python"
+            ],
+            "belief": 0.028267004144664935,
+            "uncertainty": 0.971732995855335
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Emotion_Classifier_Assignment",
+              "skill:Python"
+            ],
+            "belief": 0.037689338859553244,
+            "uncertainty": 0.9623106611404467
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/CVision",
+              "skill:Python"
+            ],
+            "belief": 0.030151471087642597,
+            "uncertainty": 0.9698485289123574
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Nanograd",
+              "skill:Python"
+            ],
+            "belief": 0.037689338859553244,
+            "uncertainty": 0.9623106611404467
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Brain-Tumor-detection-using-YOLOv10",
+              "skill:Python"
+            ],
+            "belief": 0.037689338859553244,
+            "uncertainty": 0.9623106611404467
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Java",
+      "metrics": {
+        "belief": 0.1090688935582386,
+        "plausibility": 0.9999999999999999,
+        "uncertainty": 0.8909311064417613,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Leet-code-solution-using-java-DSA-",
+              "skill:Java"
+            ],
+            "belief": 0.05610853036921592,
+            "uncertainty": 0.9438914696307841
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Employee-managment-system-using-jswing-and-mysql",
+              "skill:Java"
+            ],
+            "belief": 0.05610853036921592,
+            "uncertainty": 0.9438914696307841
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Machine Learning",
+      "metrics": {
+        "belief": 0.10530447561727833,
+        "plausibility": 0.9999999999999999,
+        "uncertainty": 0.8946955243827216,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Emotion_Classifier_Assignment",
+              "skill:Machine_Learning"
+            ],
+            "belief": 0.05696026317925435,
+            "uncertainty": 0.9430397368207456
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Brain-Tumor-detection-using-YOLOv10",
+              "skill:Machine_Learning"
+            ],
+            "belief": 0.05126423686132892,
+            "uncertainty": 0.948735763138671
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "SQL",
+      "metrics": {
+        "belief": 0.0995290330038848,
+        "plausibility": 1.0,
+        "uncertainty": 0.9004709669961152,
+        "path_count": 2,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Shyam_Galgotias_TruEstate_assignment",
+              "skill:SQL"
+            ],
+            "belief": 0.04374899985197829,
+            "uncertainty": 0.9562510001480217
+          },
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Employee-managment-system-using-jswing-and-mysql",
+              "skill:SQL"
+            ],
+            "belief": 0.058331999802637716,
+            "uncertainty": 0.9416680001973623
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Java Swing",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Employee-managment-system-using-jswing-and-mysql",
+              "skill:Java_Swing"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "YOLOv10",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Brain-Tumor-detection-using-YOLOv10",
+              "skill:YOLOv10"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Unity (Game Engine)",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Super-mario-recreation-in-unity",
+              "skill:Unity_(Game_Engine)"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "C#",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Super-mario-recreation-in-unity",
+              "skill:C#"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Neural Networks",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Nanograd",
+              "skill:Neural_Networks"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Computer Vision",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/CVision",
+              "skill:Computer_Vision"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Streamlit",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Emotion_Classifier_Assignment",
+              "skill:Streamlit"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "React.js",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Finmen-MVP",
+              "skill:React.js"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "JavaScript",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Finmen-MVP",
+              "skill:JavaScript"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Leet-code-solution-using-java-DSA-",
+              "skill:Data_Structures"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Algorithms",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Leet-code-solution-using-java-DSA-",
+              "skill:Algorithms"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Pygame",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/2048-game-using-pygame",
+              "skill:Pygame"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Git",
+      "metrics": {
+        "belief": 0.06759328243151862,
+        "plausibility": 1.0,
+        "uncertainty": 0.9324067175684814,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/EduFlow",
+              "skill:Git"
+            ],
+            "belief": 0.06759328243151862,
+            "uncertainty": 0.9324067175684814
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Machine Learning Algorithms",
+      "metrics": {
+        "belief": 0.0649908045490252,
+        "plausibility": 1.0,
+        "uncertainty": 0.9350091954509748,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Nanograd",
+              "skill:Machine_Learning_Algorithms"
+            ],
+            "belief": 0.0649908045490252,
+            "uncertainty": 0.9350091954509748
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "2D Game Development",
+      "metrics": {
+        "belief": 0.06233761432272996,
+        "plausibility": 1.0,
+        "uncertainty": 0.93766238567727,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Super-mario-recreation-in-unity",
+              "skill:2D_Game_Development"
+            ],
+            "belief": 0.06233761432272996,
+            "uncertainty": 0.93766238567727
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Deep Learning",
+      "metrics": {
+        "belief": 0.06233761432272996,
+        "plausibility": 1.0,
+        "uncertainty": 0.93766238567727,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/CVision",
+              "skill:Deep_Learning"
+            ],
+            "belief": 0.06233761432272996,
+            "uncertainty": 0.93766238567727
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Data Structures & Algorithms",
+      "metrics": {
+        "belief": 0.06233761432272996,
+        "plausibility": 1.0,
+        "uncertainty": 0.93766238567727,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/flashcard_generator",
+              "skill:Data_Structures_&_Algorithms"
+            ],
+            "belief": 0.06233761432272996,
+            "uncertainty": 0.93766238567727
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Tailwind CSS",
+      "metrics": {
+        "belief": 0.06233761432272996,
+        "plausibility": 1.0,
+        "uncertainty": 0.93766238567727,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Finmen-MVP",
+              "skill:Tailwind_CSS"
+            ],
+            "belief": 0.06233761432272996,
+            "uncertainty": 0.93766238567727
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "SMTP (Simple Mail Transfer Protocol)",
+      "metrics": {
+        "belief": 0.06233761432272996,
+        "plausibility": 1.0,
+        "uncertainty": 0.93766238567727,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Email-Automator",
+              "skill:SMTP_(Simple_Mail_Transfer_Protocol)"
+            ],
+            "belief": 0.06233761432272996,
+            "uncertainty": 0.93766238567727
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "Text Processing",
+      "metrics": {
+        "belief": 0.05963054258095786,
+        "plausibility": 1.0,
+        "uncertainty": 0.9403694574190421,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/flashcard_generator",
+              "skill:Text_Processing"
+            ],
+            "belief": 0.05963054258095786,
+            "uncertainty": 0.9403694574190421
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    },
+    {
+      "name": "MIME (Multipurpose Internet Mail Extensions)",
+      "metrics": {
+        "belief": 0.05963054258095786,
+        "plausibility": 1.0,
+        "uncertainty": 0.9403694574190421,
+        "path_count": 1,
+        "evidence_paths": [
+          {
+            "path": [
+              "dev:iam-shyamrathore",
+              "repo:Iam-shyamrathore/Email-Automator",
+              "skill:MIME_(Multipurpose_Internet_Mail_Extensions)"
+            ],
+            "belief": 0.05963054258095786,
+            "uncertainty": 0.9403694574190421
+          }
+        ],
+        "math_model": "Josang-Yager-Hybrid"
+      }
+    }
+  ]
+}

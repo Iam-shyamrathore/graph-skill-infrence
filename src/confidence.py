@@ -133,10 +133,21 @@ class ConfidenceCalculator:
         for m in masses[1:]:
             fused = MassFunction.combine(fused, m)
 
+        # 5. Prepare detailed path metadata for research trace
+        detailed_paths = []
+        for i, path in enumerate(paths):
+            m_path = masses[i]
+            detailed_paths.append({
+                'path': path,
+                'belief': m_path['s'],
+                'uncertainty': m_path['theta']
+            })
+
         return {
             'belief': fused.belief('s'),
             'plausibility': fused.plausibility('s'),
             'uncertainty': fused['theta'],
             'path_count': len(paths),
+            'evidence_paths': detailed_paths[:10], # Limit to top 10 for space
             'math_model': 'Josang-Yager-Hybrid'
         }
